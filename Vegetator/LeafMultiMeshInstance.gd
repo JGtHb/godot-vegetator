@@ -2,7 +2,6 @@ tool
 extends MultiMeshInstance
 
 export(Array, Dictionary) var requested_placements
-export(Array) var requested_transforms
 
 export(int, 0, 20) var leaf_interpolation_factor = 3
 export(float, 0, 5) var leaf_min_spacing = .3
@@ -24,7 +23,6 @@ func _enter_tree():
 func reset(_b):
 	self.multimesh.instance_count = 0
 	requested_placements = []
-	requested_transforms = []
 
 
 #place the leaves in the positions requested
