@@ -23,8 +23,8 @@ Generates the location, rotation, and size of each branch in the user-defined L-
 ## How to Use
 >See the demo scene for more details
 
-* Import the Vegetator into your project
-* Set up a minimum of three nodes in your project and attach the . This hierarchy is recommended but not required:
+* Import the Vegetator folder into your project
+* Set up a minimum of three nodes in your project and attach the relevant scripts. This hierarchy is recommended but not required:
     - Placement Manager Node (Node) (PlacementManager.gd)
         - Leaf Manager Node (MultiMeshInstance) (LeafMultiMeshInstance.gd)
             - Plant Instancer Node (MultiMeshInstance) (BranchMultiMeshInstance.gd)
