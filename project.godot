@@ -1,0 +1,48 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "MultiMesh",
+"class": "BranchMultiMesh",
+"language": "GDScript",
+"path": "res://Vegetator/BranchMultiMesh.gd"
+}, {
+"base": "MultiMesh",
+"class": "LeafMultiMesh",
+"language": "GDScript",
+"path": "res://Vegetator/LeafMultiMesh.gd"
+} ]
+_global_script_class_icons={
+"BranchMultiMesh": "",
+"LeafMultiMesh": ""
+}
+
+[application]
+
+config/name="GodotVegetator"
+config/description="Demo scene for Godot Vegetator"
+run/main_scene="res://demo_scene.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=2560
+window/size/height=1600
+
+[editor_plugins]
+
+enabled=PoolStringArray( "low_poly_terrain" )
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
