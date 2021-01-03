@@ -6,7 +6,7 @@ Rapidly generate and place trees, bushes, grass, and more in Godot
 ## Overview
 This is a proof-of-concept for quickly generating and placing and infinite number of [L-system](https://en.wikipedia.org/wiki/L-system) style plants within a Godot scene. All relevant code is contained within the "Vegetator" folder and can be easily imported to your project. The code is straightforward and can be expanded for your use-case. 
 
-This solution focuses on maintaining high performance while making each plant unique. It achieves this by using the GPU to repeatedly transform a single, simple mesh repeatedly via MultiMeshInstance. This allows each plant to be unique while keeping the number of draw calls to a minimum.
+This solution focuses on maintaining high performance while making each plant unique. It achieves this by using the GPU to repeatedly transform a single, simple mesh via MultiMeshInstance. This allows each plant to be unique while keeping the number of draw calls to a minimum.
 
 This can be used out-of-box for quickly adding vegetation to prototype levels, or potentially a final solution for low-poly projects. This is not a good solution for near-camera plants due to the intersections between branches. For this use case, [generating plant meshes as a single array mesh](https://github.com/adszads/godot-procedural-tree-generation) at the cost of increased draw calls would be a better approach.
 
